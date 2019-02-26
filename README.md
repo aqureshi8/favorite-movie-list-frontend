@@ -34,6 +34,7 @@ This is a very basic application that does not have an actual user login system.
 *Notes:* 
 - Refreshing a page will most likely not persist the logged in status.
 - You may search for any movie even when not logged in, but adding the movie to favorites will do nothing.
+- I recognize that providing a username in params or query is not secure.
 
 ## Improvements Needed for Production
 If this was an actual production application there are a very many number of things that I would add or do differently. Below is a list of these things:
