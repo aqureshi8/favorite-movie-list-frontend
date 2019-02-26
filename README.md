@@ -4,9 +4,13 @@
 The front end for an application that allows users to search for movies and save them into a favorites list.
 
 ## Introduction
-Welcome to the favorite movie list web application. The application stack consists of VueJS for the frontend, Sinatra in Ruby for the backend, and a Mongo database. This is my very first time using any of these technologies, including Ruby. I tried my best to learn and use the best practices for each of these technologies in the short amount of time that I had to create the application, but I am sure that some of those areas are lacking due to the time constraints. You can find some instructions on how best to use this application below [#Instructions].
+Welcome to the favorite movie list web application. The application stack consists of VueJS for the frontend, Sinatra in Ruby for the backend, and a Mongo database. This is my very first time using any of these technologies, including Ruby. I tried my best to learn and use the best practices for each of these technologies in the short amount of time that I had to create the application, but I am sure that some of those areas are lacking due to the time constraints. You can find some instructions on how best to use this application [below](#Instructions).
 
-The application in its entirety was deployed on Heroku.
+The application in its entirety was deployed on Heroku. Here are some important links:
+- [Frontend deployed on heroku](https://favorite-movies-list-frontend.herokuapp.com/)
+- [Frontend Git Project](https://github.com/aqureshi8/favorite-movie-list-frontend)
+- [Backend deployed on heroku](https://favorite-movies-list-backend.herokuapp.com/)
+- [Backend Git Project](https://github.com/aqureshi8/favorite-movies-list-backend)
 
 ## Features
 The favorite movies list application is a very basic web application with the following features:
