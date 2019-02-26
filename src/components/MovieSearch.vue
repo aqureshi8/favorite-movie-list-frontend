@@ -2,7 +2,7 @@
   <div class="movieSearch">
     <h1 class="pageHeader">Movie Search</h1>
     <form class="searchForm" method="GET" v-on:submit="search" onsubmit="return false;">
-      <input type="text" name="search" v-model="searchQuery" />
+      <input type="text" name="search" v-model="searchQuery" placeholder="Search..." />
     </form>
     <div class="movie" v-for="movie in searchResults" v-bind:key="movie.imdbID">
     	<Movie v-on:click.native="editMovie(movie.imdbID)" :title="movie.Title" :year="parseInt(movie.Year)" :poster="movie.Poster"/>
