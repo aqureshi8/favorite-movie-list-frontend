@@ -48,5 +48,6 @@ If this was an actual production application there are a very many number of thi
 - Add a search button, so you can submit with the button as well as pressing enter.
 - Ensure that anyone that is not logged in cannot access the Edit Favorites page, which is the screen that appears after clicking on a specific movie.
 - Currently, all api endpoints are post requests in an attempt to not allow people to use it from a browser and to hide the parameters at least a little bit. Once an authentication mechanism to connect to the api was implemented, the endpoints requests would be true to their label; ie. get, post, etc.
+- Change the favicon and title of the page.
 
 Thank you very much for visiting and checking out my application. I hope that you enjoyed my first attempt at VueJS, Sinatra, and Mongo DB.
