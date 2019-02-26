@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://localhost:9292'
+axios.defaults.baseURL = 'https://favorite-movies-list-backend.herokuapp.com'
 
 Vue.config.productionTip = false
 
