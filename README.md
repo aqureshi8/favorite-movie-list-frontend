@@ -6,6 +6,8 @@ The front end for an application that allows users to search for movies and save
 ## Introduction
 Welcome to the favorite movie list web application. The application stack consists of VueJS for the frontend, Sinatra in Ruby for the backend, and a Mongo database. This is my very first time using any of these technologies, including Ruby. I tried my best to learn and use the best practices for each of these technologies in the short amount of time that I had to create the application, but I am sure that some of those areas are lacking due to the time constraints. You can find some instructions on how best to use this application below [#Instructions].
 
+The application in its entirety was deployed on Heroku.
+
 ## Features
 The favorite movies list application is a very basic web application with the following features:
 
@@ -40,5 +42,6 @@ If this was an actual production application there are a very many number of thi
 - I would have liked to learned more about best practices for writing in Sinatra, VueJS, and MongoDB.
 - Add a search button, so you can submit with the button as well as pressing enter.
 - Ensure that anyone that is not logged in cannot access the Edit Favorites page, which is the screen that appears after clicking on a specific movie.
+- Currently, all api endpoints are post requests in an attempt to not allow people to use it from a browser and to hide the parameters at least a little bit. Once an authentication mechanism to connect to the api was implemented, the endpoints requests would be true to their label; ie. get, post, etc.
 
 Thank you very much for visiting and checking out my application. I hope that you enjoyed my first attempt at VueJS, Sinatra, and Mongo DB.
