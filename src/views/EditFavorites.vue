@@ -7,7 +7,8 @@
       <div>
         <img class="rating" v-on:click="setRating(n)" v-for="n in rating" src="@/assets/star.png" :id="'star'+n" />
         <img class="rating" v-on:click="setRating(rating+n)" v-for="n in 5-rating" src="@/assets/emptyStar.png" :id="'star'+n" />
-        <input type="text" name="comment" v-model="comment" />
+        <br/>
+        <input class="comment" type="text" name="comment" v-model="comment" placeholder="Write comment here..." />
       </div>
       <button class="add" v-on:click="add">Add</button>
     </div>
@@ -121,5 +122,14 @@ export default {
   overflow: scroll;
   z-index: 0;
   position: absolute;
+}
+.add {
+  font-size: 18pt;
+  border-style: none;
+}
+.comment {
+  margin: 2%;
+  font-size: 14pt;
+  width: 400px;
 }
 </style>

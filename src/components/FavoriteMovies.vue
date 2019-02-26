@@ -4,7 +4,7 @@
     <h1>Favorited movies</h1>
     <div class="movieList">
       <div v-for="movie in favoriteMovies">
-        <p v-on:click="removeMovie(movie.title, movie.year)" class="removeButton">X</p>
+        <button v-on:click="removeMovie(movie.title, movie.year)" class="removeButton">X</button>
         <Movie class='center' :title="movie.title" :year="movie.year" :rating="movie.rating" :poster="movie.poster" :comment="movie.comment" />
       </div>
     </div>
@@ -31,7 +31,12 @@
     },
 
     created () {
-      FavoriteMoviesApi.getFavoriteMovies(this.username)
+      this.getFavoriteMovies();
+    },
+
+    methods: {
+      getFavoriteMovies: function() {
+        FavoriteMoviesApi.getFavoriteMovies(this.username)
         .then(movies => {
           this.favoriteMovies = movies.data[0].movies;
         })
@@ -39,14 +44,14 @@
         .finally(() => {
           this.loading = false;
         })
-    },
+      },
 
-    methods: {
       removeMovie: function (movieTitle, movieYear) {
-        this.$emit("removeMovie", {
-          title: movieTitle,
-          year: movieYear
-        });
+        FavoriteMoviesApi.removeMovie(this.username, movieTitle, movieYear)
+        .then(resp => {
+          this.getFavoriteMovies();
+        })
+        .catch(error => console.log(error));
       }
     }
   }
@@ -66,5 +71,10 @@
   height: 85%;
 }
 .center {
+}
+.removeButton {
+  float: right;
+  font-size: 18pt;
+  border-style: none;
 }
 </style>
